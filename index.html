@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juemix</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
      <header>
@@ -17,11 +17,12 @@
   <main>
     <div class="grid" id="productos"></div>
 
-    <div id="detallePedido">
-      <h2>Resumen del Pedido</h2>
-      <ul id="listaPedido"></ul>
-      <p><strong>Total:</strong> $<span id="totalPedido">0</span></p>
-      <button class="btn" id="btnFinalizar">Finalizar compra</button>
+    <div id="miniResumen">
+       <h3>Resumen</h3>
+       <ul id="listaPedido"></ul>
+       <p><strong>Total:</strong> $<span id="totalPedido">0</span></p>
+       <button class="btn" id="btnFinalizar">Finalizar compra</button>
+       <span onclick="document.getElementById('miniResumen').style.display='none'" style="cursor:pointer; float:right;">❌</span>
     </div>
 
     <form id="formulario">
@@ -30,7 +31,7 @@
       <input type="text" id="direccion" placeholder="Dirección" required />
       <input type="text" id="dni" placeholder="DNI" required />
       <input type="email" id="email" placeholder="Correo electrónico" required />
-      <button class="btn" type="submit">Confirmar compra</button>
+      <button class="btnformu" type="submit">Confirmar compra</button>
     </form>
   <script src="./index.js"></script>
 </body>

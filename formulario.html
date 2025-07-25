@@ -3,18 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
-    <link rel="stylesheet" href="./css/style.css">
-     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+   <title>Formulario de Compra - Juemix</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
     (function() {
       emailjs.init("TU_PUBLIC_KEY"); // Reemplazá con tu Public Key
     })();
   </script>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+      padding: 20px;
+      background-color: #0d0d0d;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .btn {
+      background-color: #7CFC00;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #resumenPedido {
+      margin-top: 20px;
+      background: #eee;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-      <div class="container">
-    <h2>Finalizar compra Juemix</h2>
+  <div class="container">
+    <h2>Finalizar compra - Juemix</h2>
     <form id="formulario">
       <input type="text" id="nombre" placeholder="Nombre completo" required />
       <input type="text" id="direccion" placeholder="Dirección" required />
