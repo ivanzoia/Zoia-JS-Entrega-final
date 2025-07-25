@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("TU_PUBLIC_KEY"); // Reemplazá con tu Public Key
+    })();
+  </script>
+</head>
+<body>
+      <div class="container">
+    <h2>Finalizar compra Juemix</h2>
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <input type="text" id="direccion" placeholder="Dirección" required />
+      <input type="text" id="dni" placeholder="DNI" required />
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <div id="resumenPedido">
+        <h4>Resumen del pedido</h4>
+        <ul id="listaResumen"></ul>
+        <p><strong>Total:</strong> $<span id="totalResumen">0</span></p>
+      </div>
+      <button class="btn" type="submit">Confirmar compra</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
